@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scaled=1, user-scalable=no" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey</h1>
+        <p id="description" class="description"><em>Thank you for taking the time to help us improve</em></p>
+    </header>
+    <form id="survey-form" action="">
+        <div id="container">
+            <fieldset id="content1">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="John Smith" required class="box" />
+
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="someone@example.com" required class="box" />
+
+                <label id="number-label" for="number">Age (Optional):</label>
+                <input id="number" type="number" min="13" max="120" placeholder="18" class="box" />
+
+
+                <label for="dropdown ">How did you hear about us?</label>
+                <select id="dropdown" name="dropdown" class="box">
+                    <option value="" selected>(select one)</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                    <option value="4">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="content2">
+                <legend>Would you reccommend us to a friend?</legend>
+                <label for="yes-recommend"><input id="yes-recommend" type="radio" name="reccommend" value="yes"
+                        class="inline" checked />Yes
+                </label>
+                <label for="maybe-recommend">
+                    <input id="maybe-recommend" type="radio" name="reccommend" value="maybe" class="inline" />Maybe
+                </label>
+                <label for="no-recommend">
+                    <input id="no-recommend" type="radio" name="reccommend" value="no" class="inline" />No
+                </label>
+            </fieldset>
+
+            <fieldset id="content3">
+                <legend>What would you like to see improved?</legend>
+                
+                <label for="improvement-1"><input id="improvement-1" type="checkbox" required name="improvements" value="improvement-1" checked
+                    class="inline" />Option 1</label>
+
+                <label for="improvement-2"><input id="improvement-2" type="checkbox" required name="improvements" value="improvement-2"
+                    class="inline" />Option 2</label>
+                
+                <label for="improvement-3"><input id="improvement-3" type="checkbox" required name="improvements" value="improvement-3"
+                    class="inline" />Option 3</label>
+
+                <label for="improvement-4"><input id="improvement-4" type="checkbox" required name="improvements" value="improvement-4"
+                    class="inline" />Option 4</label>
+                
+                <label for="improvement-5"><input id="improvement-5" type="checkbox" required name="improvements" value="improvement-5"
+                    class="inline" />Option 5</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments or suggestions: </legend>
+                <textarea placeholder="Enter your comments here..."></textarea>
+            </fieldset>
+
+            <input id="submit" type="submit" value="Submit" />
+        </div>
+
+    </form>
+</body>
+
+</html>

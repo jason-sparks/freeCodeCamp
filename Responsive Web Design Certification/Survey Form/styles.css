@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(purpleAndBlackAbstract.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #ced4da;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin: 3em auto;
+    
+}
+
+#title {
+    font-size: 1.8em;
+}
+
+#description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+form {
+    background-color: rgba(45, 45, 45, 0.8);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+form .box {
+    width: 98%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: .5em;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 1em;
+}
+
+#content1 label {
+    display: block;
+    width: 98%;
+    margin-bottom: 1em;
+}
+
+#dropdown {
+    width: 98.5%;
+}
+
+legend {
+    margin-bottom: 1em;
+}
+
+#content2 {
+    display: block;
+    width: 100%;
+}
+
+#content2 label {
+    display: block;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+#content2 input, #content3 input {
+    margin-right: .5em;
+}
+
+#content3 label {
+    display: block;
+    width: 100%;
+    margin-bottom: .5em;
+}
+ 
+textarea {
+    width: 99.5%;
+    height: 125px;
+    position: relative;    
+}
+
+#submit {
+    width: 100%;
+    height: 2.5em;
+    position: relative;
+    top: 11px;
+    display: block;
+    margin: 0 auto;
+
+    background-color: rgb(18, 219, 78);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 100%;
+        margin: auto;
+    }
+}
